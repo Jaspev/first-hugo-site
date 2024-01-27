@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+		<link rel="canonical" href="{{ .Site.BaseURL }}">
+		<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+		<link rel='stylesheet' type='text/css' href='/style.css'>
+		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
+		{{ end -}}
+		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+		{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+		{{ end -}}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="main">
+			<div class="hbox">
+				<div class="vbox">
+					{{ partial "nav.html" . }}
+				</div>
+				<div class="vbox">
+					<main style="padding:20px; padding-right:0px;">
+						Hello, this is my website. It's gone through <a href="">many iterations</a>. I'm hoping this one will be here to stay. :)
+						<br>
+						<br>
+						It's made with <a href="">Hugo</a> and hosted on <a href="">Github Pages</a>. More info about how this site was made in my <a href="">first blog post</a>.
+						<br>
+						<br>
+						On this site you can read my <a href="">about</a> me, see my <a href="">contact</a> info, listen to my <a href="">music</a>, download my <a href="">games</a>, download my audio <a href="">samples</a>, read my <a href="">blog</a> posts about various things, or look at the <a href="">update</a> log of this site. If you like my site, check out some of my favorite websites and tools that inspired this website.
+					</main>
+				</div>
+			</div>
+			<div class="center">
+				{{ partial "footer.html" . }}
+			</div>
+		</div>
+	</body>
+</html>

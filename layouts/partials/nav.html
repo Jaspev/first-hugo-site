@@ -1,0 +1,19 @@
+<nav> 
+	<header style="padding-bottom:10px; padding-top:10px">
+		<h2 class="wavyheader">
+			<a href="/">
+				<span style="--i:0">J</span><span style="--i:1">A</span><span style="--i:2">S</span><span style="--i:3">P</span><span style="--i:4">E</span><span style="--i:5">V</span>
+			</a>
+		</h2>
+	</header>
+	<hr style="border-color: #ec6e83;">
+	<div style="padding-top:10px">
+		{{ range where .Site.RegularPages.ByTitle "Params.type" "nav" }}
+			<li>
+				<a href="{{ .RelPermalink }}">
+					{{ .Title }}
+				</a>
+			</li>
+		{{ end }}
+	</div>
+</nav>

@@ -1,0 +1,6 @@
+baseURL = '/'
+relativeURLs = "True"
+languageCode = 'en-us'
+title = "Jaspev's Homepage"
+[markup.goldmark.renderer]
+	unsafe = true
