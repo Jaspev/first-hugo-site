@@ -13,6 +13,10 @@ body {
 	background-color: #1b1f24;
 }
 
+main {
+	width: 352px;
+}
+
 p {
 	text-align: justify;
 }
@@ -32,7 +36,6 @@ nav {
 
 li {
 	list-style: none;
-	text-align: center;
 }
 
 header {
@@ -40,13 +43,21 @@ header {
 }
 
 footer {
+	margin-bottom: 20px;
 	font-size: 12px;
 	text-align: center;
 }
 
-h2 {
-	width: 88px;
-	margin: auto;
+hr {
+	border-color: #ec6e83;
+}
+
+h1 {
+}
+
+img {
+	width: 100%;
+	padding: 20px;
 }
 
 .main {

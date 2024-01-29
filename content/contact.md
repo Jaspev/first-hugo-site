@@ -1,7 +1,7 @@
 +++
 title = 'Contact'
-type = 'nav'
 date = 2024-01-26T20:05:13-07:00
+type = 'nav'
 +++
 
 I don't know what you'd want to contact me about, but here's a list of various ways to contact me, in order of response speed (fastest at the top):

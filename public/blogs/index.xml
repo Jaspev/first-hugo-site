@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Jaspev&#39;s Homepage</title>
+    <link>/blogs/</link>
+    <description>Recent content in Blogs on Jaspev&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jan 2024 22:53:06 -0700</lastBuildDate>
+    <atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog01</title>
+      <link>/blogs/blog01/</link>
+      <pubDate>Sat, 27 Jan 2024 22:53:06 -0700</pubDate>
+      <guid>/blogs/blog01/</guid>
+      <description>this is blog01</description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>/blogs/history/</link>
+      <pubDate>Sat, 27 Jan 2024 18:33:34 -0700</pubDate>
+      <guid>/blogs/history/</guid>
+      <description>Site 1: Pretty Outside, Ugly Inside. This was my first website, made some time in late 2022. Even now I still think this website looks quite nice. It&amp;rsquo;s background would scroll, it had an animated gif with bouncing letters as the banner, the icon in the bottom right would rotate back and forth, and it even had a music player (using javascript that I stole from another site) that would play of some of my favorite music!</description>
+    </item>
+  </channel>
+</rss>

@@ -15,6 +15,7 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
+		
 		<div class="main">
 			<div class="hbox">
 				<div class="vbox">
@@ -22,12 +23,16 @@
 				</div>
 				<div class="vbox">
 					<main style="padding:20px; padding-right:0px;">
-						<h1>
-							{{ .Title }}
-						</h1>
-						<br>
-						
-						{{ block "main" . }}{{ end }}
+						{{ .Content }}
+						{{ range .Pages }}
+						<ul>
+							<li>
+								<a href="{{ .Permalink }}">
+									{{ .Date.Format "2006.01.02" }} {{ .Title }}
+								</a>
+							</li>
+						</ul>
+						{{ end }}
 					</main>
 				</div>
 			</div>
