@@ -1,7 +1,7 @@
-+++
-title = 'History'
-date = 2024-01-27T18:33:34-07:00
-+++
+---
+title: "This Site's History"
+date: 2024-01-27T18:33:34-07:00
+---
 
 ## Site 1:
 ### *Pretty Outside, Ugly Inside.*
@@ -12,8 +12,6 @@ This was my first website, made some time in late 2022. Even now I still think t
 <br>
 The problem with it though, was that it was impossible to update. If I added a single more word to the main body of text, it would scale improperly, then the icon in the bottom right wouldn't align for some reason, it was a mess behind the scenes. And really the entire website just said who I was but it didn't really link to any of my work. So I went on to make another website from the ground up!
 <br>
-<br>
-<hr>
 <br>
 
 ## Site 2:
@@ -28,8 +26,6 @@ This site, behind the scenes, was *somewhat* manageable, and updateable. I would
 <br>
 When you're making a website, you need to know exactly what you're going to do with the site before you start. So I started again, using everything I had learned previously, and now having a clear vision of how I wanted my site to look, and how I wanted my site to function.
 <br>
-<br>
-<hr>
 <br>
 
 ## Site 3:
@@ -46,8 +42,6 @@ I really liked this website, and behind the scenes, it was simple enough to add 
 So once more, I went to make another website, the website you're seeing now. Except I knew I needed to move on from just using raw html and css. With the way I was doing it before, it would be incredibly time consuming and tedious to make the current site you're seeing. So I needed to learn a completely new way of making websites.
 <br>
 <br>
-<hr>
-<br>
 
 ## Site 4:
 ### *Current Day.*
@@ -55,7 +49,7 @@ So once more, I went to make another website, the website you're seeing now. Exc
 
 <br>
 
-I eventually found [this blog](https://melankorin.net/blog/2023/06/19/) by Melankorin about how they go about making websites. In this blog, they talk about something called static site generators. This is exactly what I wanted! With a static site generator (at least with the static site generator I use, Hugo) you can make a layout of peices of the webpage you want to be consistent with every page in html and css. Then the actual content of the page is made in seperate markdown files, not raw html. So there it was, I finally made a site that I think is pretty on the outside, and very pretty on the inside. If you'd like to read more about this site, and how it's made, I'd recommend [this other blog post]() by me.
+I eventually found [this blog](https://melankorin.net/blog/2023/06/19/) by Melankorin about how they go about making websites. In this blog, they talk about something called static site generators. This is exactly what I wanted! With a static site generator (at least with the static site generator I use, Hugo) you can make a layout in html of peices of the webpage you want to be consistent with every page. Then the actual content of the page is made in seperate markdown files, not raw html. So there it was, I finally made a site that I think is pretty on the outside, and very pretty on the inside. If you'd like to read more about this site, and how it's made, I'd recommend [this other blog post]({{< ref "blogs/how-this-site-was-made" >}}) by me.
 <br>
 <br>
 Thank you for reading. :)

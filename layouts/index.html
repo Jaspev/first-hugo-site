@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-		<link rel='stylesheet' type='text/css' href='/style.css'>
-		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
-		{{ end -}}
-		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-		{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
-		{{ end -}}
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="robots" content="index, follow">
-		<meta charset="utf-8">
+		{{ partial "header.html" . }}
 	</head>
 	<body>
 		<div class="main">
@@ -23,10 +12,11 @@
 				<div class="vbox">
 					<main style="padding:20px; padding-right:0px;">
 						<p>
-							Hello, this is my website. It's gone through <a href="{{ "blogs/history" | relURL }}">many iterations</a>. I'm hoping this one will be here to stay. :)
+							<h1>Home</h1>
+							Hello, this is my website. It's gone through <a href="{{ "blogs/history" | relURL }}">many iterations</a>, but I think this one will be here to stay. :)
 							<br>
 							<br>
-							It's made with <a href="https://gohugo.io/">Hugo</a> and hosted on <a href="https://pages.github.com/">Github Pages</a>. More info about how this site was made in my <a href="">first blog post</a>.
+							It's made with <a href="https://gohugo.io/">Hugo</a> and hosted on <a href="https://pages.github.com/">Github Pages</a>. More info about how this site was made in <a href="{{ "blogs/how-this-site-was-made" | relURL }}">my first blog post</a>.
 						</p>
 					</main>
 				</div>

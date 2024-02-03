@@ -38,6 +38,16 @@ li {
 	list-style: none;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 8px;
+	border: 1px solid;
+}
+
 header {
 	width: 100%;
 }
@@ -52,7 +62,17 @@ hr {
 	border-color: #ec6e83;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ec6e83;
+}
+
+h3 {
+	padding-bottom: 4px;
 }
 
 img {

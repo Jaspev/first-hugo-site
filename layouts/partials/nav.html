@@ -12,7 +12,7 @@
 			{{ range where .Site.AllPages.ByTitle "Params.type" "nav" }}
 				<li>
 					<a href="{{ .RelPermalink }}">
-						{{ .Title }}
+						{{ .Title -}}
 					</a>
 				</li>
 			{{ end }}

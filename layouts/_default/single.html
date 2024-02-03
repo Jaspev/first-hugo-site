@@ -1,3 +1,20 @@
 {{ define "main" }}
-  {{ .Content }}
+	{{ if .Date }}
+		{{ .Date.Format "2006.01.02" }}
+	{{ end }}
+	<h1>
+		{{ .Title }}
+	</h1>
+	{{ .Content }}
+	{{ range .Pages }}
+	<ul>
+		<li style="padding-bottom: 5px;">
+			{{ .Date.Format "2006.01.02" }} 
+			<br>
+			<a href="{{ .Permalink }}">
+				{{ .Title }}
+			</a>
+		</li>
+	</ul>
+	{{ end }}
 {{ end }}

@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-		<link rel='stylesheet' type='text/css' href='/style.css'>
-		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
-		{{ end -}}
-		<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-		{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
-		{{ end -}}
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="robots" content="index, follow">
-		<meta charset="utf-8">
+		{{ partial "header.html" . }}
 	</head>
 	<body>
-		
 		<div class="main">
 			<div class="hbox">
 				<div class="vbox">
@@ -26,9 +14,11 @@
 						{{ .Content }}
 						{{ range .Pages }}
 						<ul>
-							<li>
+							<li style="padding-bottom: 5px;">
+								{{ .Date.Format "2006.01.02" }} 
+								<br>
 								<a href="{{ .Permalink }}">
-									{{ .Date.Format "2006.01.02" }} {{ .Title }}
+									{{ .Title }}
 								</a>
 							</li>
 						</ul>
